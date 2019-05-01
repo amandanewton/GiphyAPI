@@ -1,0 +1,75 @@
+/* Font
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px; 
+	line-height: 1.2em;
+	letter-spacing: .025em;
+}
+
+.btn {
+	letter-spacing: .025em;
+	color: #fff;
+}
+
+.btn:hover {
+	color: #e2e0e0;
+}
+
+.btn:active {
+	color: #e2e0e0;
+}
+
+.btn:focus {
+	color: #e2e0e0;
+}
+
+
+/* Styling
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+header {
+	padding: 20px 5px;
+}
+
+body {
+	background: url("../images/whitediamond.png");
+}
+
+/* ===== Buttons ===== */
+
+.btn {
+  background: #34d9c3;
+  background-image: linear-gradient(to bottom, #34d9c3, #2bb8a0);
+  border-radius: 5px;
+  text-shadow: 1px 1px 3px #666666;
+  font-size: 16px;
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to bottom, #27a392, #229380);
+}
+
+/* ===== User Submission Area ===== */
+
+input[type=text] {
+	display: block;
+}
+
+input[type=submit] {
+	margin-left: 0px;
+}
+
+.inputArea > input {
+	margin: 5px 0px;
+}
+
+/* ===== Gifs ===== */
+
+.gifDiv {
+	float: left;
+	margin: 10px 5px;
+}
