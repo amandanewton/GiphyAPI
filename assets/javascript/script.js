@@ -1,7 +1,7 @@
 	// Variables 
 	// =====================================================================================
 
-	var celebrities = [
+	var topics = [
 		"Cardi B",
 		"Taylor Swift",
 		"Justin Beieber",
@@ -28,17 +28,17 @@
 	// Functions 
 	// =====================================================================================
 
-	// Create buttons on top of screen using array of celebrities 
+	// Create buttons on top of screen using array of topics 
 	function createRowOfButtons() {
 		// Empty current div of buttons
 		$('#celebrityButtons').empty();
 		// Loop through list of celebrites and create buttons for each listing
-		for (var i = 0; i < celebrities.length; i++) {
+		for (var i = 0; i < topics.length; i++) {
 			var $celebButton = $('<button>');
-			$celebButton.attr("data-celeb", celebrities[i]);
+			$celebButton.attr("data-celeb", topics[i]);
 			$celebButton.addClass("celebButton");
 			$celebButton.addClass("btn");
-			$celebButton.text(celebrities[i]);
+			$celebButton.text(topics[i]);
 			$('#celebrityButtons').append($celebButton);
 		};
 	}
@@ -53,11 +53,11 @@
 			// Collect user input
 			var userCeleb = $("#celebrity-input").val().trim();
 			// Check if user entered input is already in array. Alert user if found.
-			if (celebrities.indexOf(userCeleb) >= 0) {
+			if (topics.indexOf(userCeleb) >= 0) {
 				alert("That celebrity button already exists!\nLet's get another celebrity in here!");
 			// Check if user entered some input to prevent creation of empty buttons
 			} else if (userCeleb.length > 0) {
-				celebrities.push(userCeleb);
+				topics.push(userCeleb);
 				// Refresh buttons on top of page
 				createRowOfButtons();
 			} 
@@ -94,7 +94,7 @@
 	            	celebImage.attr("src", stillImage);
 	            	gifDiv.append(ratingParagraph);
 	            	gifDiv.append(celebImage);
-	            	$("#celebrities").prepend(gifDiv);
+	            	$("#topics").prepend(gifDiv);
 	          	}
 	          	
 	          	// When a gif still is clicked, animate the gif. When an animated gif if clicked, display a still.
